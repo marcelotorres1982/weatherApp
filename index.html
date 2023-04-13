@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Previsão do tempo</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+    <!-- outros links -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/weather-icons/2.0.10/css/weather-icons.min.css" />
+</head>
+
+<body>
+    <h1>Previsão do tempo</h1>
+    <form onsubmit="return consultarTemperatura(event)">
+        <label for="city">Digite a cidade para a qual deseja obter informações meteorológicas:</label><br>
+        <input type="text" id="city" name="city"><br>
+        <input type="submit" value="Obter previsão">
+        <span class="wi wi-day-sunny"></span>
+
+
+
+    </form>
+    <div id="weather-info"></div>
+    <script src="script.js"></script>
+</body>
+
+</html>
