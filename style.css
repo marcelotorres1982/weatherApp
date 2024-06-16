@@ -1,7 +1,7 @@
 body {
     font-family: 'Roboto', sans-serif;
     color: #f5f5f5;
-    background-color: #333;
+    background-color: rgb(29, 22, 75);
     margin: 0;
     padding: 0;
     display: block;
@@ -9,18 +9,19 @@ body {
 
 h1 {
     font-size: 3em;
-    margin: 0.5em 0;
+    margin: 0.em 0;
     text-align: center;
 }
 
+h1:hover{
+    color: darkgrey;
+}
 form {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    /* Adicione essa propriedade para centralizar o formulário */
-    height: 60vh;
-    /* Adicione essa propriedade para definir a altura do formulário como a altura da viewport */
+    height: 50vh;
 }
 
 label {
@@ -34,35 +35,36 @@ input[type=text] {
     border: none;
     border-radius: 0.3em;
     display: block;
-    /* Adicione essa propriedade para exibir a caixa de texto */
     margin-bottom: 1em;
-    /* Adicione essa propriedade para adicionar espaço abaixo do campo de entrada */
+    color:darkblue;
+    text-align: center;
 }
 
 input[type=submit] {
-    font-size: 1.5em;
+    font-size: 1.2em;
     padding: 0.5em;
     border: none;
     border-radius: 0.3em;
     display: block;
-    background-color: grey;
-    color: #fff;
+    background-color: whitesmoke;
+    color: darkblue;
     margin: 1em 0;
 }
 
 input[type=submit]:hover {
-    background-color: #555;
+    background-color: darkgrey;
+    color: whitesmoke;
 }
 
 #weather-info {
-    font-size: 2em;
+    font-size: 1.5em;
     text-align: center;
-    margin-top: 2em;
+    margin-top: 0.5em;
 }
 
 #city {
     display: block;
     /* Adicione essa propriedade para tornar o campo de entrada visível */
-    margin-bottom: 1em;
+    margin-bottom: 0.2em;
     /* Adicione essa propriedade para adicionar espaço abaixo do campo de entrada */
 }
